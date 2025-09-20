@@ -17,8 +17,7 @@ Vehicleserver.use(middleware);
 Vehicleserver.use(router);
 
 // 3. set port number for the server
-const PORT = 4000 || process.env.PORT;
-
+const PORT = process.env.PORT || 4000
 // 4. listen to the request from the frontend to resolve the request.
 Vehicleserver.listen(PORT, () => {
   console.log(`Server Running Successfully at port number ${PORT}`);
